@@ -1,0 +1,44 @@
+{
+    "name": "‏‏KwikiMediaEmbed",
+	"version": "0.1.1",
+	"author": [
+		"[http://kwiki.co.il Kwiki]",
+		"[[mw:user:HagaiAsaban|Hagai Asaban]]",
+		"[[mw:user:Yacohen|Yacohen]]"
+	],
+	"url": "doalogue-kwiki/‏‏KwikiMediaEmbed",
+    "descriptionmsg": "kwiki-media-embed-desc",
+	"license-name": "GPL v2",
+	"type": "parserhook",
+	"AutoloadClasses": {
+		"‏‏KwikiMediaEmbedHooks": "‏‏KwikiMediaEmbed.hooks.php",
+		"‏‏KwikiMediaEmbed": "‏‏‏‏‏‏‏‏KwikiMediaEmbed.class.php"
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"‏‏KwikiMediaEmbedHooks::onParserFirstCallInit"
+		],
+		"BeforePageDisplay": [
+			"‏‏KwikiMediaEmbedHooks::onBeforePageDisplay"
+		]
+	},
+	"MessagesDirs": {
+		"‏‏KwikiMediaEmbed": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.‏‏KwikiMediaEmbed": {
+			"styles": [
+                "modules/ext.‏‏KwikiMediaEmbed.css"
+			],
+            "messages": [
+            ]            
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "‏‏KwikiMediaEmbed"
+	},
+	"manifest_version": 1
+}
